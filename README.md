@@ -1,26 +1,36 @@
-# ![4Geeks Logo](http://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=4geeks,16) HTML Hello
+# Making a website as a team (Git collabotation)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/html-hello.git)
+Practice your skills in GIT while developing a typical website.
 
-The most basic boilerplate for any 4Geeks Academy Student using the [gitpod.io](gitpod.io) coding editor.
+Each student works on a different file, for a different part of the website and the most senior can work as Team Leader (for integration and deployment), unless the teacher prefers to be the team leader of the whole class. The Html-Template-Engine library will take care of putting all the pieces together.
 
-[![How to open html/css preview of my project in gitpod](https://ucarecdn.com/573d0bef-9c8c-48dd-a6ef-401972dff96d/)](https://youtu.be/dfbDCMu_p-0)
+## 📝 Instructions
 
-## What to do next?
+1. The Team Leader should fork this repository on github.com and [invite other collaborators to the repo](https://github.com/breatheco-de/exercise-git-collabration/blob/master/iOBmU5zYqA.gif).
 
-Create a `index.html` file with the [basic HTML structure](http://content.breatheco.de/lesson/what-is-html-learn-html#page-structure) and see it live by running web-server using the following command:
+2. Pick what website you want to build.
 
-```sh
-$ pip3 install flask && python3 server.py
+3. Each contributor will have to clone the new forked repository and develop one piece of the website you have chosee, each project is divided in pieces inside its **templates/** directory.
+
+4. When each team member finishes, they have to commit and push to the forked repository.
+
+## 💻 Run the website
+
+In order to watch the website live run the following command:
+
+```bash
+$ npx browser-sync start -s -w
 ```
 
-- You can create as many HTML files you want
-- You can also create CSS files and you can import them onto your website using a `<link>` tag placed between the `<head></head>` tags, like this:
+## Deploy the website
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
-```
+Use Vercel, Netlify or Github pages to deploy the website to the team URL (for example: `https://mysuperteam.zeit.sh`).
+
+## Delivery
+
+Everyone delivers the same repo as solution.
+
+## Complementary info
+
+The [Html-Template-Engine library](https://github.com/alesanchezr/html-template-engine) is being used as template engine for building the landing page.
+
